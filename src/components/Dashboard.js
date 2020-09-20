@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
     return (
         <div>
-            Dashboard
+          Dashboard {props.message} {props.name}
         </div>
     );
 };

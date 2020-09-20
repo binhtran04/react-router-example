@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <PublicRoute restricted={false} component={Home} path="/" exact />
           <PublicRoute restricted={true} component={SignIn} path="/signin" exact />
-          <PrivateRoute component={Dashboard} path="/dashboard" exact />
+          <PrivateRoute component={Dashboard} componentProps={{ message: "Hello", name: "World" }} path="/dashboard" exact />
         </Switch>
       </BrowserRouter>
     );
